@@ -37,7 +37,7 @@ flush privileges;
 
 ```
 
-**2.2 insert role **
+**2.2 insert role**
 
 ```sql
 INSERT IGNORE INTO roles(name) VALUES('ROLE_USER');
