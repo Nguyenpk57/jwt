@@ -35,7 +35,7 @@ JWT will hascode header + payload and compare with signature
 
 In the doFilterInternal method you may not need to query the Db, but will get all the UserDetails information in the jwt
 
-1.4. Some important classes
+**1.4. Some important classes**
 
 - SecurityConfig
 
