@@ -25,9 +25,9 @@ The application uses technologies and lombox
         Spring services
 
 
-**1. DB**
+# 2. DB
 
-**1.1. Init Db**
+**2.1. Init Db**
 
 ```sql
 create database jwtdb;
@@ -37,20 +37,20 @@ flush privileges;
 
 ```
 
-**1.2 insert role **
+**2.2 insert role **
 
 ```sql
 INSERT IGNORE INTO roles(name) VALUES('ROLE_USER');
 INSERT IGNORE INTO roles(name) VALUES('ROLE_ADMIN');
 ```
 
-**1.3. DB diagram**
+**2.3. DB diagram**
 
 
 ![image](https://user-images.githubusercontent.com/10681453/221155093-aadcf26f-f03c-466f-9d35-2caace7786ff.png)
 
 
-**2. Run the app**
+# 3. Run the app
 
 You can run the spring boot app by typing the following command -
 
@@ -66,9 +66,9 @@ You can also package the application in the form of a `jar` file and then run it
 mvn package
 ```
 
-**3. api**
+# 4. api
 
-**3.1. api/auth/signup**
+**4.1. api/auth/signup**
 
 - REQUEST
 
@@ -90,7 +90,7 @@ mvn package
 }
 ```
 
-**3.2. api/auth/signin**
+**4.2. api/auth/signin**
 
 - REQUEST
 
