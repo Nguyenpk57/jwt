@@ -138,11 +138,33 @@ mvn package
 "password":"Secret"
 }
 ```
-  - RESPONSE
+- RESPONSE
 
 ```json
 {
 "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjc3MjMyMjU2LCJleHAiOjE2Nzc4MzcwNTZ9.kpfbb8mHLJeSAnRcwS4VfDhlEgdor1-bIfcCheoS92C0plGfKNJm5K4PYTUFQFwVbz3JOg4ctcfK8MLRgI2oxw",
 "tokenType": "Bearer"
 }
+```
+
+**4.3. api/user/me**
+
+- REQUEST
+
+```json
+
+Authorization - BearerToken: user token when login success
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjc3MjMyMjU2LCJleHAiOjE2Nzc4MzcwNTZ9.kpfbb8mHLJeSAnRcwS4VfDhlEgdor1-bIfcCheoS92C0plGfKNJm5K4PYTUFQFwVbz3JOg4ctcfK8MLRgI2oxw
+
+```
+- RESPONSE
+
+```json
+
+{
+    "id": 1,
+    "username": "nguyenk",
+    "name": "nguyenpk"
+}
+
 ```
