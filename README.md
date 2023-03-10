@@ -1,28 +1,66 @@
 # 1. how it works
 
-The application uses technologies and lombox
+**1.1. The application uses some technologies and lombox**
 
 ![image](https://user-images.githubusercontent.com/10681453/221156796-f593e537-0b8e-4105-af9c-cd58495d4eb4.png)
 
+**1.2. Packages in project** 
 
     + config/
+    
         Add config about spring security, Auditing for Db, and enable WebMvcConfig
+        
     + controller/
+    
         Spring controllers
+        
     + exception/
+    
         Exceptions by the application
+        
     + model/
+    
         JPA models
+        
     + payload/
+    
         Object for REST in/out operations
+        
     + repository/
+    
         + specification/
+        
             Some specifications for JPA
+            
         Spring repositories
+        
     + security/
+    
         using jwt to generate jwt key and validate jwt from request
+        
     + service/
+    
         Spring services
+
+**1.3. The working mechanism is as follows**
+
+When logging into the system, the system will generate a token and send it to the client
+
+Each request then the client needs to attach the token to the header and send it back to the backend verify
+
+A JWT will consist of 3 headers, payload and signature, separated by a "."
+
+JWT will hascode header + payload and compare with signature
+
+In the doFilterInternal method you may not need to query the Db, but will get all the UserDetails information in the jwt
+
+**1.4. Some important classes**
+
+- SecurityConfig
+
+- JwtAuthenticationFilter
+
+- JwtTokenProvider
 
 
 # 2. DB
